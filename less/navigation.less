@@ -1,1 +1,34 @@
 // Navigation code here
+.navigation{
+  .display(column, center, center);
+    width:100%;
+
+    div{
+        width: 100%;
+        justify-content: center;
+        text-align: center;
+        padding: 2% 1%;
+       
+            h1{
+                
+                @media @phone{
+                    .display(column, center, center);
+                    .mobilePadding();
+                    padding-bottom: 0;
+                    margin-bottom: 0;
+                }
+            }
+        nav{
+            .display(row, space-evenly, center);
+            @media @phone{
+                .mobilePadding();
+            }
+
+            a{
+                // margin: 5%;
+                color: @ebony-clay;
+                text-decoration: none;
+            }//this closes a
+        }//this closes nav
+    }//this closes the div
+}//this closes navigation class

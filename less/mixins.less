@@ -1,1 +1,25 @@
 // Mixins Here
+//Parametric mixins
+
+.display(@direction, @justify, @align){
+    display: flex;
+    flex-direction: @direction;
+    justify-content: @justify;
+    align-items: @align;
+}
+
+.button(@width, @justify, @align){
+    background-color: @btn-bg-color;
+    width: @width;
+    justify-content: @justify;
+    align-items: @align;
+    color: @wild-sand;
+    border-radius: 5px;
+    padding: 2% 0%;
+}
+
+//mixin regular
+.mobilePadding(){
+    padding: 4% 2%;
+    margin: 2%;
+}
