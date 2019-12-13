@@ -224,8 +224,8 @@ footer {
   padding: 0 15px;
 }
 @media (max-width:500px) {
-  .home .header-img-section {
-    width: 300px;
+  .home .main-header {
+    width: 100%;
   }
 }
 .home .space-images {
