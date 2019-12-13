@@ -335,6 +335,9 @@ footer {
 }
 @media (max-width:500px) {
   .home .walk .walk-img {
+    justify-content: center;
+    align-items: center;
+    margin-left: 0%;
     width: 100%;
   }
 }
@@ -342,4 +345,5 @@ footer {
   width: 100%;
   height: auto;
   border-radius: 10px;
+  justify-content: center;
 }
