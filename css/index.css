@@ -172,6 +172,17 @@ a {
   justify-content: center;
   align-items: center;
 }
+.navigation nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.navigation nav a {
+  margin: 5%;
+  color: #23293B;
+  text-decoration: none;
+}
 footer {
   color: #22283B;
   background: #f4f4f4;
@@ -235,6 +246,10 @@ footer {
   color: #F6F6F6;
   border-radius: 5px;
   padding: 2% 0%;
+}
+.home .walk .walk-text .btn button:hover {
+  background-color: #F6F6F6;
+  color: #22283A;
 }
 .home .walk .walk-img {
   width: 46%;
