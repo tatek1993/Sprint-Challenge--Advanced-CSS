@@ -5,10 +5,24 @@
 
     div{
         width: 100%;
-
+        justify-content: center;
+        text-align: center;
+        padding: 2% 1%;
+       
+            h1{
+                
+                @media @phone{
+                    .display(column, center, center);
+                    .mobilePadding();
+                    padding-bottom: 0;
+                    margin-bottom: 0;
+                }
+            }
         nav{
-            .display(row, space-between, baseline);
-            
+            .display(row, space-evenly, center);
+            @media @phone{
+                .mobilePadding();
+            }
 
             a{
                 // margin: 5%;

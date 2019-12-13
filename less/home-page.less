@@ -1,9 +1,14 @@
 // Home Content
-
+.html{
+  @media @phone{
+    max-width: 500px;
+  }
+}
 .home{
 
   .intro {
 
+    
     h2 {
       padding: 15px;
     }
@@ -18,23 +23,32 @@
     display: flex;
     flex-wrap: wrap;
     width: 100%;
-    @media @phone {
-        //fill this in later- disappearing images
-      }
+
+      .sky, .launch{
+        @media @phone {
+          display: none;
+        }  //closes media query
+      }//closes sky and launch classes
       
-     
+    
 
     img {
       width: 28%;
       margin: 20px 2.5%;
       border-radius: 20px;
       height: 100%;
-    }
-  }
+      @media @phone{
+        width: 100%;
+        .mobilePadding();
+      }
+    }//closes img
+  }//closes space-images
 
   .visit-planets {
     padding: 15px;
-
+    @media @phone {
+      .mobilePadding();
+    }
     h3 {
       margin-top: 11px;
     }
@@ -73,8 +87,15 @@
 
       .btn {
         display: flex;
+        @media @phone{
+          justify-content: center;
+        }//closes media query
           button{
             .button(25%, flex-start, center);
+            @media @phone{
+              .button(100%, center, center);
+              padding: 4% 0%;
+            }//close media query
 
             &:hover{
               background-color: @wild-sand;
@@ -89,7 +110,7 @@
       margin-left: 4%;
       @media @phone{
         width:100%;
-        margin: 2%;
+        
       }//closes media query
       
       img {
