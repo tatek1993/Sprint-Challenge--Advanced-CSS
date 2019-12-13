@@ -1,6 +1,6 @@
 // Home Content
 
-.home {
+.home{
 
   .intro {
 
@@ -18,6 +18,11 @@
     display: flex;
     flex-wrap: wrap;
     width: 100%;
+    @media @phone {
+        //fill this in later- disappearing images
+      }
+      
+     
 
     img {
       width: 28%;
@@ -45,17 +50,26 @@
     padding: 50px 60px;
     display: flex;
     justify-content: center;
+    @media @phone {
+        flex-direction: column-reverse;
+        .mobilePadding();
+       
+    }//media query close
+      
 
     .walk-text {
       width: 50%;
+      @media @phone{
+        width:100%;
+      }
 
       h3 {
         margin-bottom: 10px;
-      }
+      }//h3 close
 
       p {
         margin-bottom: 26px;
-      }
+      }//p close
 
       .btn {
         display: flex;
@@ -65,20 +79,24 @@
             &:hover{
               background-color: @wild-sand;
               color: @btn-bg-color;
-            }
-          }
-      }
-    }
+            }//hover close
+          }//button close
+      }//btn close
+    }//walk-text close
 
     .walk-img {
       width: 46%;
       margin-left: 4%;
+      @media @phone{
+        width:100%;
+        margin: 2%;
+      }//closes media query
       
       img {
         width: 100%;
         height: auto;
         border-radius: 10px;
-      }
-    }
-  }
-}// home
+      }//img close
+    }//walk-img close
+  }//walk close
+} // home
